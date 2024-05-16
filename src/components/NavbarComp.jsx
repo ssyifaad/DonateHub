@@ -4,15 +4,15 @@ import { NavLink } from "react-router-dom";
 
 const NavbarComp = () => {
   return (
-    <div>
+    <div className="sticky-top">
       <Navbar expand="lg">
         <NavbarBrand href="/">
           <img
             alt="logo"
-            src="/logo-only.png"
+            src="/logo1.png"
             style={{
-              height: 50,
-              width: 50,
+              height: 25,
+              width: 160,
             }}
           />
         </NavbarBrand>

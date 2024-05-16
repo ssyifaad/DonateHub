@@ -1,7 +1,9 @@
 import { Button, Col, Container, Row } from "reactstrap";
 import { NavLink } from "react-router-dom";
-//import CardComp from "../components/CardComp";
+import CardComp from "../components/CardComp";
 import heroImage from "../assets/equality.svg";
+import VolunCardComp from "../components/VolunCardComp";
+
 const Homepage = () => {
   return (
     <div className="homepage">
@@ -16,7 +18,7 @@ const Homepage = () => {
                 <NavLink to="/kegiatan-donasi">Donasi Sekarang</NavLink>
               </Button>
               <Button className="btn2 rounded-5 me-4">
-                <NavLink to="/kegiatan-volun">Daftar Volunteer</NavLink>
+                <NavLink to="/kegiatan-volunteer">Daftar Volunteer</NavLink>
               </Button>
             </Col>
             <Col>
@@ -30,7 +32,37 @@ const Homepage = () => {
 
       <div className="kegiatandonasi w-100 min-vh-100">
         <Container>
-          <h1>Kegiatan Donasi</h1>
+          <Row>
+            <h1>Kegiatan Donasi</h1>
+          </Row>
+          <Row>
+            <Col className="ui centered cards m-4">
+              <CardComp />
+              <CardComp />
+              <CardComp />
+            </Col>
+          </Row>
+          <Button className="btn rounded-5 px-4">
+            <NavLink to="/kegiatan-donasi">Lihat Lebih Banyak</NavLink>
+          </Button>
+        </Container>
+      </div>
+
+      <div className="kegiatanvolunteer w-100 min-vh-100">
+        <Container>
+          <Row>
+            <h1>Kegiatan Volunteer</h1>
+          </Row>
+          <Row>
+            <Col className="ui centered cards m-4">
+              <VolunCardComp />
+              <VolunCardComp />
+              <VolunCardComp />
+            </Col>
+          </Row>
+          <Button className="btn rounded-5 px-3">
+            <NavLink to="/kegiatan-volunteer">Lihat Lebih Banyak</NavLink>
+          </Button>
         </Container>
       </div>
     </div>
