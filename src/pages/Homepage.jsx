@@ -33,7 +33,7 @@ const Homepage = () => {
       <div className="kegiatandonasi w-100 min-vh-100">
         <Container>
           <Row>
-            <h1>Kegiatan Donasi</h1>
+            <h1 className="mb-4">Kegiatan Donasi</h1>
           </Row>
           <Row>
             <Col className="ui centered cards m-4">
@@ -51,7 +51,7 @@ const Homepage = () => {
       <div className="kegiatanvolunteer w-100 min-vh-100">
         <Container>
           <Row>
-            <h1>Kegiatan Volunteer</h1>
+            <h1 className="mb-4">Kegiatan Volunteer</h1>
           </Row>
           <Row>
             <Col className="ui centered cards m-4">

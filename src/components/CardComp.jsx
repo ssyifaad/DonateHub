@@ -4,7 +4,7 @@ const CardComp = () => {
   // const cardInfo = [
   //   {
   //     imgSrc: "/donasi1.png",
-  //     title: "Bantu Bapak Budi Cukupi Kebutuhannya",
+  //     title: " Bantu Bapak Budi Cukupi Kebutuhannya",
   //     total: "Rp10.500.000",
   //     barvalue: "50",
   //   },
@@ -24,25 +24,29 @@ const CardComp = () => {
 
   return (
     <div>
-      <Card
-        className="mx-4"
-        style={{
-          width: "18rem",
-        }}
-      >
-        <img alt="Donasi" src="/donasi1.png" />
-        <CardBody>
-          <CardTitle>Donasi</CardTitle>
-          <CardSubtitle>Dana Terkumpul: Rp5.200.000</CardSubtitle>
-          <Progress
-            color="success"
-            value={33}
-            style={{
-              height: "6px",
-            }}
-          />
-        </CardBody>
-      </Card>
+      <a href="./kegiatan-donasi">
+        <Card
+          tag="a"
+          style={{
+            width: "18rem",
+            cursor: "pointer",
+          }}
+          className="mx-4"
+        >
+          <img alt="Donasi" src="/donasi1.png" />
+          <CardBody>
+            <CardTitle>Donasi</CardTitle>
+            <CardSubtitle>Dana Terkumpul: Rp5.200.000</CardSubtitle>
+            <Progress
+              color="success"
+              value={33}
+              style={{
+                height: "6px",
+              }}
+            />
+          </CardBody>
+        </Card>
+      </a>
     </div>
   );
 };

@@ -13,7 +13,6 @@ import KegiatanVolunPage from "./pages/KegiatanVolunPage";
 
 import NavbarComp from "./components/NavbarComp";
 import FooterComp from "./components/FooterComp";
-//import CardComp from "./components/CardComp";
 
 function App() {
   return (

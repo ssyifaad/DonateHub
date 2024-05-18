@@ -12,7 +12,7 @@ const NavbarComp = () => {
             src="/logo1.png"
             style={{
               height: 25,
-              width: 160,
+              width: 175,
             }}
           />
         </NavbarBrand>
