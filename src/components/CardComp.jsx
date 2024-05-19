@@ -24,7 +24,7 @@ const CardComp = () => {
 
   return (
     <div>
-      <a href="./kegiatan-donasi">
+      <a href="./detail-donasi">
         <Card
           tag="a"
           style={{

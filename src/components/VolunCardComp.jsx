@@ -3,7 +3,7 @@ import { Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 const VolunCardComp = () => {
   return (
     <div>
-      <a href="./kegiatan-volunteer">
+      <a href="./detail-volunteer">
         <Card
           tag="a"
           className="mx-4 volunteercard"
@@ -11,7 +11,7 @@ const VolunCardComp = () => {
             width: "18rem",
           }}
         >
-          <img alt="Donasi" src="/donasi1.png" />
+          <img alt="Volunteer" src="/volun1.png" />
           <CardBody>
             <CardTitle className="mb-4">Volunteer aaaaaaaaa</CardTitle>
             <CardSubtitle className="text-center">
