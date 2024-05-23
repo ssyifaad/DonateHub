@@ -13,7 +13,9 @@ const VolunCardComp = () => {
         >
           <img alt="Volunteer" src="/volun1.png" />
           <CardBody>
-            <CardTitle className="mb-4">Volunteer aaaaaaaaa</CardTitle>
+            <CardTitle className="mb-4 card-title">
+              Volunteer aaaaaaaaa
+            </CardTitle>
             <CardSubtitle className="text-center">
               <span className="bg-success text-light px-2 py-1 rounded-2">
                 Pendaftaran Dibuka!

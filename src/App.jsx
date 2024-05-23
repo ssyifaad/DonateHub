@@ -13,6 +13,7 @@ import KegiatanVolunPage from "./pages/KegiatanVolunPage";
 
 import NavbarComp from "./components/NavbarComp";
 import FooterComp from "./components/FooterComp";
+import DetailVolunPage from "./pages/DetailVolunPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/donasi-sekarang" Component={DonasiPage} />
         <Route path="/kegiatan-donasi" Component={KegiatanDonasiPage} />
         <Route path="/kegiatan-volunteer" Component={KegiatanVolunPage} />
+        <Route path="/detail-volunteer" Component={DetailVolunPage} />
       </Routes>
 
       <FooterComp />

@@ -1,32 +1,21 @@
-import { Button, Col, Container, Progress, Row } from "reactstrap";
+import { Button, Col, Container, Row } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
-const DetailDonasiPage = () => {
+const DetailVolunPage = () => {
   return (
-    <div className="detaildonasi">
+    <div className="detailvolun">
       <Container className="w-50">
-        <NavLink to={"/kegiatan-donasi"} className="btn nav">
+        <NavLink to={"/kegiatan-volunteer"} className="btn nav">
           <img src="src/assets/Arrow 1.png" className="img me-3" />
           Kembali
         </NavLink>
-        <Row className="row">
-          <img src="donasi-hd.png" />
-          <h1 className="title mt-2">
-            {" "}
-            Donasi Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h1>
-          <Col className="col">Rp5.200.000</Col>
-          <Col className="col text-end">Rp70.000.000</Col>
-          <Progress
-            color="success"
-            value={7}
-            style={{
-              height: "10px",
-            }}
-          ></Progress>
+        <Row className="row volun-title">
+          <img src="volun1.png" />
+          <h1 className="title mt-2"> Volunteer Lorem ipsum dolor sit amet</h1>
+          <h4 className="ms-3 rounded-2 py-1">Pendaftaran Dibuka!</h4>
         </Row>
         <Row className="row mt-4">
-          <h2 className="desc-title"> Cerita Penggalangan Dana</h2>
+          <h2 className="desc-title"> Di Balik Kegiatan </h2>
           <p className="desc-text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
             quam corrupti cumque architecto voluptas vero assumenda delectus,
@@ -40,19 +29,30 @@ const DetailDonasiPage = () => {
             cupiditate mollitia.
           </p>
         </Row>
-        <Row className="row donasi-proof">
-          <h2 className="mt-3">Penyaluran Dana</h2>
+
+        <Row className="row detailkeg">
+          <h2 className="mt-3">Detail Kegiatan</h2>
+          <Row className="row table detail-tabel">
+            <Col className="col detail-name">
+              Tanggal Pendaftaran <br />
+              Tanggal Pelaksanaan <br />
+              Lokasi Kegiatan <br />
+            </Col>
+            <Col className="col detail-val text-end ">
+              1 Januari - 1 Maret 2023 <br />
+              12 Maret 2023 <br />
+              Bandung <br />
+            </Col>
+          </Row>
         </Row>
-        <Row className="row my-3 donatur-msg">
-          <h2 className="mt-3">Pesan Donatur </h2>
-        </Row>
-        <Row className="row">
+
+        <Row className="row mt-4">
           <Col className="text-center">
             <Button className="btn share-btn rounded-2 me-4">
               <NavLink to="/kegiatan-donasi">Bagikan</NavLink>
             </Button>
-            <Button className="btn donasi-btn rounded-2 me-4">
-              <NavLink to="/kegiatan-volunteer">Donasi Sekarang</NavLink>
+            <Button className="btn regis-btn rounded-2 me-4">
+              <NavLink to="/kegiatan-volunteer">Daftar Sekarang</NavLink>
             </Button>
           </Col>
         </Row>
@@ -61,4 +61,4 @@ const DetailDonasiPage = () => {
   );
 };
 
-export default DetailDonasiPage;
+export default DetailVolunPage;
