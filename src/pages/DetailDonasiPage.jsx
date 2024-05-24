@@ -1,5 +1,6 @@
 import { Button, Col, Container, Progress, Row } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import DonaturCardComp from "../components/DonaturCardComp";
 
 const DetailDonasiPage = () => {
   return (
@@ -44,15 +45,22 @@ const DetailDonasiPage = () => {
           <h2 className="mt-3">Penyaluran Dana</h2>
         </Row>
         <Row className="row my-3 donatur-msg">
-          <h2 className="mt-3">Pesan Donatur </h2>
+          <h2 className="mt-3"> Donatur </h2>
+          <Row className="scrollable">
+            <DonaturCardComp />
+            <DonaturCardComp />
+            <DonaturCardComp />
+            <DonaturCardComp />
+            <DonaturCardComp />
+          </Row>
         </Row>
-        <Row className="row">
+        <Row className="row mt-4">
           <Col className="text-center">
             <Button className="btn share-btn rounded-2 me-4">
-              <NavLink to="/kegiatan-donasi">Bagikan</NavLink>
+              <NavLink to="">Bagikan</NavLink>
             </Button>
             <Button className="btn donasi-btn rounded-2 me-4">
-              <NavLink to="/kegiatan-volunteer">Donasi Sekarang</NavLink>
+              <NavLink to="/donasi-sekarang">Donasi Sekarang</NavLink>
             </Button>
           </Col>
         </Row>

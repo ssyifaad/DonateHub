@@ -49,10 +49,10 @@ const DetailVolunPage = () => {
         <Row className="row mt-4">
           <Col className="text-center">
             <Button className="btn share-btn rounded-2 me-4">
-              <NavLink to="/kegiatan-donasi">Bagikan</NavLink>
+              <NavLink to="">Bagikan</NavLink>
             </Button>
             <Button className="btn regis-btn rounded-2 me-4">
-              <NavLink to="/kegiatan-volunteer">Daftar Sekarang</NavLink>
+              <NavLink to="/daftar-volunteer">Daftar Sekarang</NavLink>
             </Button>
           </Col>
         </Row>
