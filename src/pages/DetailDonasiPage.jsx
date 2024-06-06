@@ -41,9 +41,7 @@ const DetailDonasiPage = () => {
             cupiditate mollitia.
           </p>
         </Row>
-        <Row className="row donasi-proof">
-          <h2 className="mt-3">Penyaluran Dana</h2>
-        </Row>
+
         <Row className="row my-3 donatur-msg">
           <h2 className="mt-3"> Donatur </h2>
           <Row className="scrollable">
